@@ -24,6 +24,11 @@ function repeater(str, option) {
     additionSeparator,
   } = option;
   const arr = Array(Number(repeatTimes));
+
+  arr.reduce((acc, _, i) => {
+    acc += str
+    acc += separator
+  }, '')
 }
 
 module.exports = {
